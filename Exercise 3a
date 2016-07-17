@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+   <html>
+     <head>
+       <meta charset = "utf-8">
+
+         <title> Javascript Temperature Converter</title>
+      </head>
+   
+      <body> 
+        <h1>Temperature Conversion</h1>
+         <p>
+        <input type= "text" id="temperature"/> 
+         <button id= "F_to_C">F to C</button>
+         <button id= "C_to_F">C to F </button>
+         </p>
+<!-- Computation result will go here-->
+      <p id= "result"></p>
+      <script source="temperature.js"></script>
+    </body>
+  </html>
+
+//Utilizing the button element should not require any other change other than the 
+//HTML  unless you change the id name. Then you would have to change any Javascript 
+//reference to the old id name.
