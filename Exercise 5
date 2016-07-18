@@ -1,0 +1,38 @@
+//This is code that can calculate tips when input as whole integer numbers, not including percentages.
+
+<!DOCTYPE html>
+   <html>
+     <head>
+       <meta charset= "utf-8">
+          <title>Tip Calculator</title>
+            <script type= "text/javascript">
+
+               //Model
+               var total, tip, sum;
+
+               //Contoller
+               var add = function () {
+
+               //get input data
+               total = +document.getElementById("total").value;
+               tip = +document.getElementById("tip").value;
+
+               //do the addition
+                sum = total + tip;
+
+               //output result
+               document.getElementById("sum").innerHTML = "Sum: $"+ sum;
+           }   
+
+        </script>
+      </head>
+
+     <body>
+	<h1>Tip Calculator</h1>
+       <label>Total:<input type="text" id="total"></label>
+       <label>Tip:<input type="text" id="tip"></label>
+       <input type="button" onclick= "add();" value="Add">
+       <div id= "sum"></div>
+     </body>
+     </html>
+ 
